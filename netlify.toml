@@ -1,6 +1,8 @@
 [Settings]
   ID = "832aff74-f4c5-4477-8d50-a240cee9ccdb"
-  Path = "."
+  Path = "site"
 
 [Build]
-  Publish = "."
+  Publish = "site"
+  Command = "echo 6"
+  Functions = "functions"

@@ -4,5 +4,5 @@
 
 [Build]
   Publish = "site"
-  Command = "echo 6"
+  Command = "make build"
   Functions = "functions"

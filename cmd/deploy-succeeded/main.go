@@ -11,6 +11,7 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	fmt.Println("Deploy succeeded")
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
+		Body:       "I ran after a deploy was created",
 	}, nil
 }
 

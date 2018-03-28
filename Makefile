@@ -2,5 +2,6 @@ build:
 	echo "${GO_IMPORT_PATH}"
 	mkdir -p functions
 	go get -v ./...
-	go build -o functions/hello-buildbot ./...
+	go build -o functions/hello-buildbot cmd/hello-buildbot/main.go
+	go build -o functions/submission-created cmd/submission-created/main.go
 	echo "done"

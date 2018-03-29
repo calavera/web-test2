@@ -8,7 +8,7 @@ import (
 func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
-		Body:       "hello AWS lambda, this is built with buildbot",
+		Body:       "hello AWS lambda, this is a change",
 	}, nil
 }
 

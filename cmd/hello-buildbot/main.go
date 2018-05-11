@@ -1,14 +1,21 @@
 package main
 
 import (
+	"bytes"
+	"fmt"
+	"os"
+
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 )
 
 func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+	var b bytes.Buffer
+	b.WriteString(fmt.Sprintf("TEST_ENV = %s", os.Getenv("TEST_ENV")))
+
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
-		Body:       "hello AWS lambda, this is a change",
+		Body:       b.String(),
 	}, nil
 }
 

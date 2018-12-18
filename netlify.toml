@@ -6,3 +6,5 @@
   Publish = "site"
   Command = "make build"
   Functions = "functions"
+[build.environment]
+  TEST_ENV = "TEST_VAL"

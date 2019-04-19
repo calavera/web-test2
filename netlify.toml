@@ -4,5 +4,4 @@
 
 [Build]
   Publish = "site"
-  Command = "make build"
-  Functions = "functions"
+  Command = "./cowsay.sh"

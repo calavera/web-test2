@@ -8,7 +8,11 @@ import (
 )
 
 func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	fmt.Printf("%v\n", request)
+	fmt.Println("HEADERS:")
+	fmt.Printf("%v\n", request.Headers)
+	fmt.Printf("\nCONTEXT:\n")
+	fmt.Printf("%v\n", request.RequestContext)
+
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
 		Body:       "hello AWS lambda, this is a change",

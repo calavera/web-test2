@@ -6,3 +6,7 @@
   Publish = "site"
   Command = "make build"
   Functions = "functions"
+
+[[redirects]]
+from = "/test?utm_source=david-test"
+to = "https://netlify.com"

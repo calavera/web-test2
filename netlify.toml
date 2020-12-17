@@ -8,5 +8,5 @@
   Functions = "functions"
 
 [[redirects]]
-from = "/test?utm_source=david-test"
+from = "/test-redirect"
 to = "https://netlify.com"

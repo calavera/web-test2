@@ -14,3 +14,8 @@ to = "https://netlify.com"
 [[redirects]]
 from = "/test-redirect-with-query"
 to = "https://netlify.com?utm_source=test"
+
+[[redirects]]
+from = "/api/*"
+to = ".netlify/functions/:splat"
+status = 200

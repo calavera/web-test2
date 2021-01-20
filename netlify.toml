@@ -24,4 +24,4 @@ status = 200
 from = "/admin/*"
 status = 200
 force = true
-conditions = { Role = "admin" }
+conditions = { Role = ["admin"] }

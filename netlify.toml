@@ -4,8 +4,8 @@
 
 [Build]
   Publish = "site"
-  Command = "make build"
-  Functions = "functions"
+  Command = "echo '1'"
+  #Functions = "functions"
 
 [[redirects]]
 from = "/test-redirect"
